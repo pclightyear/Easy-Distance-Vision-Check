@@ -213,7 +213,7 @@ void presshandler() {
   }
 }
 
-char translateIR() // takes action based on IR code received describing Car MP3 IR codes
+char translateIR() 
 {
   switch (results.value) {
     case 0xFF18E7:
@@ -240,15 +240,8 @@ char translateIR() // takes action based on IR code received describing Car MP3 
 }
 
 //----------------------------------------------------------------------
-// piezo buzzer
-//----------------------------------------------------------------------
-
-//----------------------------------------------------------------------
 // lcd
 //----------------------------------------------------------------------
-// char good[] = "Good Eye!";
-// char bad[] = "nearsighted!";
-// char again[] = "5: Test Again.";
 
 void Task_LCD(void *pvParameters) {
   (void) pvParameters;
